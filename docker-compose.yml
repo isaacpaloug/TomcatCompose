@@ -1,0 +1,9 @@
+version: '2'
+services:
+      tomcat:
+            image: 'tomcat:9.0-alpine'
+            restart: on-failure:3
+            container_name: TomcatIsaac
+            ports:
+                  - 8080:8080
+            build: '.'
